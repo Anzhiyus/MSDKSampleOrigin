@@ -1,0 +1,36 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from:rootProject.file('dependencies.gradle')
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        // 改为阿里云的镜像地址
+        maven { setUrl("https://maven.aliyun.com/repository/central") }
+        maven { setUrl("https://maven.aliyun.com/repository/jcenter") }
+        maven { setUrl("https://maven.aliyun.com/repository/google") }
+        maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { setUrl("https://maven.aliyun.com/repository/public") }
+        maven { setUrl("https://jitpack.io") }
+    }
+    dependencies {
+        // 推荐的 Android Gradle Plugin 版本，不做强求，可以自定适配需要的版本。但是如果你需要引入 UXSDK 框架，则建议使用推荐版本，否则可能会出现编译兼容性问题。
+        classpath "com.android.tools.build:gradle:7.1.2"
+
+        // 推荐的 Kotlin 版本，如果你需要引入 UXSDK 框架，则建议使用推荐版本，否则可能会出现编译兼容性问题
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.21" //DJI MSDK 建议的版本
+        // ... (remaining code)
+    }
+}
+
+//allprojects {
+//    repositories {
+//        google()
+//        jcenter()
+//        mavenCentral()
+//    }
+//}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
