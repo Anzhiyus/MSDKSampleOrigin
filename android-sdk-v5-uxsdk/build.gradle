@@ -26,6 +26,7 @@ android {
 }
 
 dependencies {
+    implementation(platform("com.android.support:support-compat:26.1.0"))
     implementation deps.annotation
     implementation deps.appcompat
     implementation deps.multidex

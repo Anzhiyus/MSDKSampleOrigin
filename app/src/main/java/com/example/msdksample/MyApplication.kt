@@ -1,4 +1,4 @@
-package cas.igsnrr.msdksample
+package com.example.msdksample
 
 import android.app.Application
 import android.content.Context

@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">MSDKSampleOrigin</string>
+
+    <!--PSDK-->
+    <string name="item_psdk_title">PSDK Test</string>
+    <string name="item_psdk_description">Demonstrate how to use PSDK related functions</string>
+    <string name="btn_send_data_to_psdk">Send Data To PaySdk</string>
+    <string name="btn_get_data_from_psdk">Get data From PaySdk</string>
+    <string name="tv_send_data_to_psdk_hint">Please enter test data sent to PSDK</string>
+
+    <string name="btn_mission_uploadkmz">uploadKmz</string>
+    <string name="btn_mission_start">Start Mission</string>
+    <string name="btn_mission_pause">Pause Misson</string>
+    <string name="btn_mission_resume">Resume Mission</string>
+    <string name="btn_mission_stop">Stop Mission</string>
+    <string name="btn_mission_wayline_select">Select Wayline ID</string>
+    <string name="btn_mission_breakinfo_resume">Resume From BreakPoint</string>
+    <string name="btn_get_payload_product_name">Get Payload Product Name </string>
 </resources>

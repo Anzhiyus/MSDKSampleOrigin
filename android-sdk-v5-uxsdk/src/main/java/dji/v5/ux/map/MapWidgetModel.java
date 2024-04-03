@@ -123,7 +123,7 @@ public class MapWidgetModel extends WidgetModel {
         bindDataProcessor(KeyTools.createKey(GimbalKey.KeyYawRelativeToAircraftHeading), gimbalYawDataProcessor);
         bindDataProcessor(KeyTools.createKey(FlightControllerKey.KeySerialNumber), flightControllerSerialNumberDataProcessor);
         bindDataProcessor(KeyTools.createKey(FlightControllerKey.KeyCompassHeading), aircraftHeadingDataProcessor);
-        FlyZoneManager.getInstance().addFlySafeNotificationListener(flySafeNotificationListener);
+//        FlyZoneManager.getInstance().addFlySafeNotificationListener(flySafeNotificationListener);
     }
 
     @Override

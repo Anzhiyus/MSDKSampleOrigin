@@ -872,8 +872,8 @@ public class MapWidget extends ConstraintLayoutWidget<Object> implements View.On
         addView((ViewGroup) mapView, 0);
         mapView.getDJIMapAsync(map -> {
             MapWidget.this.map = map;
-            postInit(listener);
-            flyZoneHelper.initializeMap(map);
+            postInit(listener); // 执行地图初始化后的一些操作，例如设置监听器等。
+            flyZoneHelper.initializeMap(map);   // 初始化地图上的飞行禁飞区域
         });
     }
 

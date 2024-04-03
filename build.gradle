@@ -14,6 +14,8 @@ buildscript {
         maven { setUrl("https://jitpack.io") }
     }
     dependencies {
+
+
         // 推荐的 Android Gradle Plugin 版本，不做强求，可以自定适配需要的版本。但是如果你需要引入 UXSDK 框架，则建议使用推荐版本，否则可能会出现编译兼容性问题。
         classpath "com.android.tools.build:gradle:7.1.2"
 

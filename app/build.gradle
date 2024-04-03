@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -74,6 +75,9 @@ android {
 }
 
 dependencies {
+
+    implementation 'com.github.thomhurst:ExpandableHintText:1.0.7'
+    api project(':android-sdk-v5-uxsdk')
 
     implementation 'com.dji:dji-sdk-v5-aircraft:5.8.0'
     compileOnly 'com.dji:dji-sdk-v5-aircraft-provided:5.8.0'
