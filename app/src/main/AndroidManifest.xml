@@ -29,7 +29,7 @@
             android:value="ef2933f337b3eb3a8dc2975c" />
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="f1136b4c898979a9ec0ff918575a4ffb" />
+            android:value="9dfa1a2993f1358baf32ca0175169660" />
 
         <activity
             android:name=".MainActivity"
@@ -48,7 +48,8 @@
         <activity
             android:name=".WaypointActivity"
             android:configChanges="orientation"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".MyApplication"
             android:configChanges="orientation"
